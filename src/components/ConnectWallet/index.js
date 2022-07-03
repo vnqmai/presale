@@ -45,7 +45,7 @@ export default function ConnectWallet() {
       if (wallet === "walletconnect") connectTrustWallet();
     }
     connect();
-  }, []);
+  }, [connectMetamask, connectTrustWallet]);
 
   return (
     <div>
