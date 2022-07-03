@@ -1,10 +1,11 @@
-import { providers } from "ethers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
+import { providers } from "ethers";
 
 export async function SignerTrustWallet() {
   const provider = new WalletConnectProvider({
     rpc: {
-      56: "https://bsc-dataseed.binance.org"
+      // 56: "https://bsc-dataseed.binance.org"
+      97: "https://data-seed-prebsc-1-s1.binance.org:8545/",
     },
   });
 
